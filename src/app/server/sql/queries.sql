@@ -5,7 +5,7 @@ SELECT * FROM task;
 SELECT "id"
 FROM task
 WHERE
-"id" = :task/id
+"id" = :task/id;
 
 -- :name task :? :1
 SELECT * FROM task WHERE "id" = :task/id;
