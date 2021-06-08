@@ -12,7 +12,11 @@
                                    :task/description (-> e .-target .-elements
                                                          (o/get "description")
                                                          .-value)
-                                   :task/done? false}]))}
+                                   :task/done? false}])
+                       (set! (-> e .-target .-elements
+                                 (o/get "description")
+                                 .-value)
+                             ""))}
    [:input {:type "text"
             :class "border rounded"
             :name "description"}]
