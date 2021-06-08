@@ -10,12 +10,6 @@
                  [com.h2database/h2 "1.4.199"]
                  [hikari-cp "2.13.0"]
 
-                 ;; logging
-                 [org.clojure/tools.logging "1.1.0"]
-                 [ch.qos.logback/logback-classic "1.2.3"]
-                 [ch.qos.logback/logback-core "1.2.3"]
-                 [org.slf4j/slf4j-api "1.7.30"]
-
                  ;; both
                  [metosin/reitit "0.5.13"]
 
