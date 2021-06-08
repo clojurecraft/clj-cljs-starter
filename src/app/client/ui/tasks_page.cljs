@@ -14,8 +14,9 @@
                                                          .-value)
                                    :task/done? false}]))}
    [:input {:type "text"
+            :class "border rounded"
             :name "description"}]
-   [:button "+"]])
+   [:button {:class "bg-gray-200 hover:bg-gray-400"} "+"]])
 
 (defn task-view
   [task]
@@ -27,6 +28,7 @@
                            (dispatch [:uncomplete-task! (:task/id task)])
                            (dispatch [:complete-task! (:task/id task)])))}]
    [:input {:type "text"
+            :class "border rounded"
             :value (:task/description task)
             :on-change (fn [e]
                          (dispatch [:change-description! (:task/id task)
