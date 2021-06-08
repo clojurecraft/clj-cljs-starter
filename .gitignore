@@ -1,0 +1,5 @@
+/resources/public/js
+/target
+/data
+.lein-repl-history
+.nrepl-port
