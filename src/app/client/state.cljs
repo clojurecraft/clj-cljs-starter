@@ -28,7 +28,7 @@
 (reg-event-fx
   ::store-tasks!
   (fn [{db :db} [_ data]]
-    {:db (assoc db :db/tasks (key-by :task/id data))}))
+    {:db (update db :db/tasks merge (key-by :task/id data))}))
 
 (reg-event-fx
   :complete-task!
